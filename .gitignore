@@ -1,3 +1,80 @@
-venv/
+# Secrets and local configuration
 .env
+.env.*
+!.env.example
+!.env.template
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and caches
 __pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test, lint, and type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# ML experiment tracking and generated training output
+wandb/
+mlruns/
+runs/
+results/
+checkpoints/
+checkpoint-*/
+lightning_logs/
+support_ticket_model/
+events.out.tfevents.*
+
+# Generated model weights
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Local vector stores and model caches
+.cache/
+chroma/
+chroma_db/
+faiss_index/
